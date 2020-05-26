@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!-- ヘッダー -->
     <header>
       <!-- タイトルを入力する -->
       <h1>titleを入力する</h1>
+
       <!-- ナビゲーション 4項目程度 -->
       <nav>
         <ul>
-          <li>nav1</li>
-          <li>nav2</li>
-          <li>nav3</li>
-          <li>nav4</li>
+          <li class="a">Game</li>
+          <li class="b">Game</li>
+          <li class="c">Game</li>
+          <li class="d">Game</li>
+          <li class="e">Game</li>
+          <li class="f">Game</li>
+          <li class="login">ログイン</li>
         </ul>
       </nav>
     </header>

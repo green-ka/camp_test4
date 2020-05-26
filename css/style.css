@@ -1,1 +1,37 @@
 @charset "utf-8";
+body {
+  width: 800px;
+  font-weight: bold;
+}
+ul {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.login {
+  margin-left: auto;
+}
+
+li {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.a {
+  font-family: "Segoe UI Symbol";
+}
+.b {
+  font-family: "Segoe UI Black";
+}
+.c {
+  font-family: "Segoe Script";
+}
+.d {
+  font-family: "Impact";
+}
+.e {
+  font-family: "Gabriola";
+}
+.f {
+  font-family: sans-serif;
+}
