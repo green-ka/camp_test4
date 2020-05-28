@@ -11,18 +11,17 @@
     <!-- ヘッダー -->
     <header>
       <!-- タイトルを入力する -->
-      <h1>titleを入力する</h1>
+      <h1>Game</h1>
 
       <!-- ナビゲーション 4項目程度 -->
       <nav>
         <ul>
           <li class="a">Game</li>
-          <li class="b">Game</li>
           <li class="c">Game</li>
           <li class="d">Game</li>
           <li class="e">Game</li>
           <li class="f">Game</li>
-          <li class="login"><a href="login.php">ログイン</li>
+          <li class="login"><a href="login.php">ログイン</a></li>
         </ul>
       </nav>
     </header>
