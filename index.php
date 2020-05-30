@@ -21,7 +21,7 @@
           <li class="d">Game</li>
           <li class="e">Game</li>
           <li class="f">Game</li>
-          <li class="login"><a href="login.php">ログイン</a></li>
+          <li class="login"><a href="login.php">ゲスト</a>でログインしています</li>
         </ul>
       </nav>
     </header>
