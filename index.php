@@ -8,6 +8,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+  <?php
+  session_start();
+  $_SESSION["username"] = "ゲスト";
+  ?>
     <!-- ヘッダー -->
     <header>
       <!-- タイトルを入力する -->
@@ -21,7 +25,10 @@
           <li class="d">Game</li>
           <li class="e">Game</li>
           <li class="f">Game</li>
-          <li class="login"><a href="login.php">ゲスト</a>でログインしています</li>
+          <li class="login">
+          <?php
+          echo '<a href="login.php">'.$_SESSION["username"].'</a>でログインしています</li>'
+          ?>
         </ul>
       </nav>
     </header>
