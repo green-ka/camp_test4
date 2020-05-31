@@ -6,16 +6,37 @@
     <title>Document</title>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
   <body>
   <?php
   session_start();
-  $_SESSION["username"] = "ゲスト";
+  $_SESSION["username"] = "";
   ?>
     <!-- ヘッダー -->
     <header>
       <!-- タイトルを入力する -->
-      <h1>Game</h1>
+      <?php
+          if($_SESSION["username"]==""){
+            $_SESSION["username"] = "ゲスト";
+            echo '<div class="tooltip">
+              <p>ようこそ、<span class="user">'.$_SESSION["username"].'</span>さん</p>
+              <div class="description">
+              <a href="login.php" class="link"><i class="fas fa-lock"></i>　ログイン</a><br>
+              <a href="insert.php" class="link"><i class="far fa-user"></i>　新規登録</a>
+              </div>
+              </div>';
+          }else{
+            echo '<div class="tooltip">
+              <p><span class="user">'.$_SESSION["username"].'</span>さん
+              <div class="description_user">
+              <i class="fas fa-sign-out-alt"></i>　ログアウト</a><br>
+              </div>
+              </div>';
+          }
+          ?> 
+        <div class="title"><p class="game">Game</p></div>
+
 
       <!-- ナビゲーション 4項目程度 -->
       <nav>
@@ -25,11 +46,6 @@
           <li class="d">Game</li>
           <li class="e">Game</li>
           <li class="f">Game</li>
-          <li class="login">
-          <?php
-          echo '<a href="login.php">'.$_SESSION["username"].'</a>でログインしています</li>'
-          ?>
-        </ul>
       </nav>
     </header>
     <!-- メイン -->
