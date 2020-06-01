@@ -10,16 +10,17 @@
 </head>
 <body>
 
-
+<div class="login_form">
 <form method="post" name="form1" action="">
 <fieldset>
-    <legend>Login</legend>
-    <label><input type="text" name="name" id="" placeholder="Username"></label><br>
-    <label for="pass"><input type="password" name="pass" id="" placeholder="Password"></label><br>
+    <legend class="title">Login</legend>
+    <label><input type="text" name="name" id="" placeholder="Username" class="login"></label><br>
+    <label for="pass"><input type="password" name="pass" id="" placeholder="Password" class="login"></label><br>
     <a href="javascript:form1.submit()" class="arrow_btn">Login　<span><i class='fas fa-arrow-circle-right'></i></span></a>
 </fieldset>
 </form>
-新規登録
-<a href="index.php">homeに戻る</a>
+<p class="link"><a href="insert.php" class="new">新規登録</a></p>
+<p class="link"><a href="index.php" class="home">Home</a></p>
+</div>
 </body>
 </html>

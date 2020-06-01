@@ -1,0 +1,67 @@
+@charset "utf-8";
+body {
+  width: 500px;
+  margin: 30px auto;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.login_form {
+  background-color: #fff;
+  padding: 50px;
+}
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 30px auto 20px;
+  font-family: "Segoe Script";
+}
+.login {
+  display: inline-block;
+  margin: 20px auto 20px;
+  padding: 0.8em;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+input:focus {
+  outline: none;
+}
+
+/* Loginボタン */
+.arrow_btn {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  padding: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  color: #1b1b1b;
+  background: #fff;
+  border-radius: 30px;
+  border: 1px solid #1b1b1b;
+  transition: transform ease 0.3s;
+  margin: 20px auto 50px;
+}
+.arrow_btn:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.arrow_btn span {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform ease 0.3s;
+}
+.arrow_btn:hover span {
+  cursor: pointer;
+  text-decoration: none;
+  transform: translateX(6px);
+}
+.link {
+  margin-bottom: 20px;
+}
+
+.new,
+.home {
+  color: #000;
+  font-family: "Meiryo UI";
+}

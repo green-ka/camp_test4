@@ -55,13 +55,13 @@ li {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* ゲストでログインしている場合 */
+/* ログインしていない場合 */
 .description {
   display: none;
   position: absolute;
   padding: 15px;
   font-size: 15px;
-  line-height: 3em;
+  line-height: 50px;
   color: #000;
   border-radius: 5px;
   background: #f0f0f0;
@@ -119,40 +119,24 @@ li {
 
 /* link */
 .link {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   color: #000;
 }
 
-.link:hover {
-  border-bottom: 1px solid #000;
-  padding-bottom: 2px;
+.link::after {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
 }
-
-/* Loginボタン */
-.arrow_btn {
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  padding: 0.8em;
-  text-align: center;
-  text-decoration: none;
-  color: #1b1b1b;
-  background: #fff;
-  border-radius: 30px;
-  border: 1px solid #1b1b1b;
-  transition: transform ease 0.3s;
-}
-.arrow_btn:hover {
-  cursor: pointer;
-  text-decoration: none;
-}
-.arrow_btn span {
-  display: inline-block;
-  text-decoration: none;
-  transition: transform ease 0.3s;
-}
-.arrow_btn:hover span {
-  cursor: pointer;
-  text-decoration: none;
-  transform: translateX(6px);
+.link:hover::after {
+  transform: scale(1, 1);
 }
