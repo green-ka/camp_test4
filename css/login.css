@@ -40,7 +40,7 @@ input:focus {
   border-radius: 30px;
   border: 1px solid #1b1b1b;
   transition: transform ease 0.3s;
-  margin: 20px auto 50px;
+  margin: 20px auto 30px;
   box-shadow: none;
 }
 .arrow_btn:focus {
@@ -89,4 +89,15 @@ input:focus {
 }
 .link a:hover::after {
   transform: scale(1, 1);
+}
+
+.error {
+  padding-bottom: 20px;
+  color: red;
+  font-size: 13px;
+}
+#error_name,
+#error_pass {
+  color: red;
+  font-size: 13px;
 }
