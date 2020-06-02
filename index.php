@@ -22,7 +22,7 @@
             echo '<div class="tooltip">
               <p>ようこそ、<span class="user">'.$_SESSION["username"].'</span>さん</p>
               <div class="description">
-              <a href="login.php" class="link"><i class="fas fa-lock"></i>　ログイン</a><br>
+              <a href="login_screen.php" class="link"><i class="fas fa-lock"></i>　ログイン</a><br>
               <a href="insert.php" class="link"><i class="far fa-user"></i>　新規登録</a>
               </div>
               </div>';
