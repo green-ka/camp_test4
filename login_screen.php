@@ -11,9 +11,9 @@
 <body>
 
 <div class="login_form">
-<form method="post" name="form1" action="login.php">
+<form method="post" name="form1" action="login.php" autocomplete="off">
 <fieldset>
-    <legend class="title">Login</legend>
+    <legend class="title">Sign In</legend>
     <label><input type="text" name="name" id="name" placeholder="Username" class="login"></label>
     <p id="error_name"><p>
     <label for="pass"><input type="password" name="password" id="password" placeholder="Password" class="login"></label>
@@ -23,12 +23,12 @@
 </form>
 <?php
 session_start();
-if(isset($_SESSION["error"])){
-    echo "<p class='error'>".$_SESSION["error"]."</p>";
+$error_msg = $_SESSION["error"];
+if(isset($error_msg)){
+    echo "<p class='error'>".$error_msg."</p>";
 }
 ?>
-<?php $error_msg = $_SESSION["error"]; ?>
-<p class="link"><a href="insert.php">新規登録</a></p>
+<p class="link"><a href="insert_screen.php">Sign Up</a></p>
 <p class="link"><a href="index.php">Home</a></p>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

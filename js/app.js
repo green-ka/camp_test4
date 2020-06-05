@@ -1,9 +1,7 @@
 $(function () {
   $(".arrow_btn").on("click", function (e) {
-    if (php.error_msg != "") {
-      php.error_msg = "";
-      $(".error").html("<p class='error'>" + php.error_msg + "</p>");
-    }
+    php.error_msg = "";
+    $(".error").html("<p class='error'><p>");
     if ($("#name").val() == null || $("#name").val() == "") {
       $("#error_pass").html("<p id='error_pass'><p>");
       $("#error_name").html("※ユーザー名を入力してください");
@@ -14,4 +12,25 @@ $(function () {
       return false;
     }
   });
+});
+
+// パスワードの表示・非表示切替
+$(".toggle-password").click(function () {
+  // iconの切り替え
+  if ($(this).hasClass("far fa-eye")) {
+    $(this).toggleClass();
+    $(this).toggleClass("far fa-eye-slash toggle-password");
+  } else {
+    $(this).toggleClass();
+    $(this).toggleClass("far fa-eye toggle-password");
+  }
+
+  // 入力フォームの取得
+  let input = $(this).parent().prev("input");
+  // type切替
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
 });

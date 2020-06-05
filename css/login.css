@@ -20,11 +20,13 @@ body {
   margin: 20px auto 20px;
   padding: 0.8em;
   width: 200px;
-  border-radius: 10px;
+  border-radius: 1px;
   box-shadow: none;
 }
 input:focus {
   outline: none;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 
 /* Loginボタン */
@@ -68,7 +70,7 @@ input:focus {
 
 .link a {
   color: #000;
-  font-family: "Meiryo UI";
+  font-family: "Segoe UI Symbol";
   padding: 10px;
   text-decoration: none;
   position: relative;
@@ -100,4 +102,11 @@ input:focus {
 #error_pass {
   color: red;
   font-size: 13px;
+}
+
+.a {
+  background: linear-gradient(110deg, #ffd800, #ff0000 45%, #ffd800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  color: #ff0000;
 }

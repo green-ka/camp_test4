@@ -2,10 +2,6 @@
 session_start();
 $name = $_POST["name"];
 $password = $_POST["password"];
-// エラーメッセージが格納されている場合空にする
-if(isset($_SESSION["error"])) {
-     $_SESSION["error"] = "";
-}
 
 // DB接続
 try {
@@ -39,12 +35,11 @@ try {
                     exit;
                 }
             }else{
-                $_SESSION["error"] = "ユーザー名またはパスワードが間違っています";
-                header("Location: login_screen.php");
+                    $_SESSION["error"] = "ユーザー名またはパスワードが間違っています";
+                    header("Location: login_screen.php");
+                    exit;
             }
         }
-    }else{
-        header("Location: login_screen.php");
     }
 ?>
 
