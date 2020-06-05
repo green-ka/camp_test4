@@ -19,7 +19,7 @@
         </p>
         <label>パスワード：</label>
         <p class="box">
-            <input type="text" name="new_password" required>
+            <input type="password" name="new_password" required>
             <span class="field-icon">
                 <i class="far fa-eye toggle-password"></i>
             </span>
