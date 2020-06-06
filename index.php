@@ -43,11 +43,7 @@
       <!-- ナビゲーション 4項目程度 -->
       <nav>
         <ul>
-          <li class="a">Game</li>
-          <li class="c">Game</li>
-          <li class="d">Game</li>
-          <li class="e">Game</li>
-          <li class="f">Game</li>
+          <li><a href="minesweeper.html" class="d link">Minesweeper</li>
       </nav>
     </header>
     <!-- メイン -->

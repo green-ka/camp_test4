@@ -1,5 +1,5 @@
 @charset "utf-8";
-body {
+.body {
   width: 500px;
   margin: 30px auto;
   background-color: #f0f0f0;
@@ -157,4 +157,25 @@ input:focus {
   font-size: 13px;
   text-align: center;
   margin: 10px;
+}
+
+/* insert.php */
+.insert {
+  width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+.view {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 100px auto 40px;
+}
+.back {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.home {
+  font-size: 20px;
+  font-weight: bold;
 }
