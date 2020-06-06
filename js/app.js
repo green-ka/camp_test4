@@ -35,7 +35,34 @@ $(".toggle-password").click(function () {
   }
 });
 
-$(".btn").on("click", function () {
-  alert("ボタン押したよ");
-  return false;
+$("#new_btn").on("click", function () {
+  if ($("#new_name").val() == "") {
+    $(".error_new_pass").html("<p id='error_new_pass'><p>");
+    $(".error_new_name").text("※ユーザー名を入力してください");
+    return false;
+  } else if ($("#new_pass").val() == "") {
+    $(".error_new_name").html("<p id='error_new_name'><p>");
+    $(".error_new_pass").text("※パスワードを入力してください");
+    return false;
+  }
+  var result_name = $("#new_name")
+    .val()
+    .match(/^[A-Za-z0-9]{4,25}$/);
+  if (result_name == null) {
+    $(".error_new_pass").html("<p id='error_new_pass'><p>");
+    $(".error_new_name").text(
+      "※ユーザー名は4文字以上25文字以下の半角英数で入力してください"
+    );
+    return false;
+  }
+  var result_pass = $("#new_pass")
+    .val()
+    .match(/^[A-Za-z0-9]{4,25}$/);
+  if (result_pass == null) {
+    $(".error_new_name").html("<p id='error_new_name'><p>");
+    $(".error_new_pass").text(
+      "※パスワードは4文字以上25文字以下の半角英数で入力してください"
+    );
+    return false;
+  }
 });

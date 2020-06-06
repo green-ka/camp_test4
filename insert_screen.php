@@ -13,25 +13,40 @@
     <form method="post" name="form2" action="insert.php" autocomplete="off" required>
         <fieldset>
         <legend class="title">Sign Up</legend>
-        <label>ユーザー名：</label>
-        <p class="box">
-            <input class="text" type="text" name="new_username" maxlength="25">
+        <div class="label">
+        <label class="required">必須</label>
+        <label class="label2">ユーザー名：</label>
+        <p class="label3">4文字以上25文字以下の半角英数を入力してください
         </p>
-        <label>パスワード：</label>
+        </div>
         <p class="box">
-            <input class="pass" type="password" name="new_password" maxlength="25">
+            <input id="new_name" class="text" type="text" name="new_username" maxlength="25">
+        </p>
+        <div class="label">
+        <p class="error_new_name"></p>
+        <label class="required">必須</label>
+        <label class="label2">パスワード：</label>
+        <p class="label3">4文字以上25文字以下の半角英数を入力してください
+        </p>
+        </div>
+        <p class="box">
+            <input id="new_pass" class="pass" type="password" name="new_password" maxlength="25">
             <span class="field-icon">
                 <i class="far fa-eye toggle-password"></i>
             </span>
         </p>
-        <label>email：</label>
+        <p class="error_new_pass"></p>
+        <div class="label">
+        <label class="optional">任意</label>
+        <label class="label2">email：</label>
+        </div>
         <p class="box">
             <input class="text" type="email" name="email">
         </p>
          
     <div class="container">
-        <a href="javascript:form2.submit()" class="btn">
-        <svg width="200" height="55">
+        <a href="javascript:form2.submit()" class="btn" id="new_btn">
+        <svg width="200" height="55" id="bbb">
         <defs>
         <linearGradient id="grad1">
             <stop offset="0%" stop-color="#FF8282"/>

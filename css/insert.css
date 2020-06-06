@@ -14,17 +14,37 @@ body {
   margin: 50px auto 40px;
   font-family: "Segoe Script";
 }
-label {
+.label {
+  margin-bottom: 6px;
+}
+.required,
+.optional {
   display: inline-block;
   font-size: 12px;
   margin-left: 85px;
+  padding: 2px;
+}
+.required {
+  background-color: red;
+  color: #fff;
+}
+.optional {
+  background-color: gray;
+  color: #fff;
+}
+.label2 {
+  font-size: 12px;
+}
+.label3 {
+  margin-top: 4px;
+  margin-left: 85px;
+  font-size: 10px;
 }
 .box {
   border: 1px solid;
   width: 230px;
   height: 30px;
   margin-left: 85px;
-  margin-bottom: 20px;
 }
 input {
   border: none;
@@ -129,4 +149,12 @@ input:focus {
 }
 .link a:hover::after {
   transform: scale(1, 1);
+}
+
+.error_new_name,
+.error_new_pass {
+  color: red;
+  font-size: 13px;
+  text-align: center;
+  margin: 10px;
 }
