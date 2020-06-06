@@ -10,27 +10,40 @@
 </head>
 <body>
 <div class="insert_form">
-    <form method="post" action="insert.php" autocomplete="off">
+    <form method="post" name="form2" action="insert.php" autocomplete="off" required>
         <fieldset>
         <legend class="title">Sign Up</legend>
         <label>ユーザー名：</label>
         <p class="box">
-            <input type="text" name="new_username" required>
+            <input class="text" type="text" name="new_username" maxlength="25">
         </p>
         <label>パスワード：</label>
         <p class="box">
-            <input type="password" name="new_password" required>
+            <input class="pass" type="password" name="new_password" maxlength="25">
             <span class="field-icon">
                 <i class="far fa-eye toggle-password"></i>
             </span>
         </p>
         <label>email：</label>
         <p class="box">
-                <input type="email" name="email">
+            <input class="text" type="email" name="email">
         </p>
-            
-        <input type="submit" value="Create Account">
-        </fieldset>
+         
+    <div class="container">
+        <a href="javascript:form2.submit()" class="btn">
+        <svg width="200" height="55">
+        <defs>
+        <linearGradient id="grad1">
+            <stop offset="0%" stop-color="#FF8282"/>
+            <stop offset="100%" stop-color="#E178ED" />
+        </linearGradient>
+        </defs>
+        <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="190" height="45"></rect>
+        </svg>
+        <span>Create Account</span>
+        </a>
+    </div>
+</fieldset>
 </form>
 <p class="link"><a href="login_screen.php">Sign In</a></p>
 <p class="link"><a href="index.php">Home</a></p>

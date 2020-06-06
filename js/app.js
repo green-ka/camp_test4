@@ -34,3 +34,8 @@ $(".toggle-password").click(function () {
     input.attr("type", "password");
   }
 });
+
+$(".btn").on("click", function () {
+  alert("ボタン押したよ");
+  return false;
+});

@@ -14,9 +14,9 @@
 <form method="post" name="form1" action="login.php" autocomplete="off">
 <fieldset>
     <legend class="title">Sign In</legend>
-    <label><input type="text" name="name" id="name" placeholder="Username" class="login"></label>
+    <label><input type="text" name="name" id="name" placeholder="Username" class="login" maxlength="25"></label>
     <p id="error_name"><p>
-    <label for="pass"><input type="password" name="password" id="password" placeholder="Password" class="login"></label>
+    <label for="pass"><input type="password" name="password" id="password" placeholder="Password" class="login" maxlength="25"></label>
     <p id="error_pass"><p>
     <a href="javascript:form1.submit()" class="arrow_btn">Login　<span><i class='fas fa-arrow-circle-right'></i></span></a>
 </fieldset>
