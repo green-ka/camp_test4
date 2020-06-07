@@ -23,8 +23,10 @@
 </form>
 <?php
 session_start();
-$error_msg = $_SESSION["error"];
-if(isset($error_msg)){
+
+$error_msg = "";
+if(isset($_SESSION["error"])){
+    $error_msg = $_SESSION["error"];
     echo "<p class='error'>".$error_msg."</p>";
 }
 ?>

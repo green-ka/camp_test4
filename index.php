@@ -11,7 +11,11 @@
   <body>
   <?php
   session_start();
+  if(isset($_SESSION["username"])) {
   $_SESSION["username"];
+  }else {
+    $_SESSION["username"]="";
+  }
   if(isset($_SESSION["error"])) {
     $_SESSION["error"] = "";
   }
